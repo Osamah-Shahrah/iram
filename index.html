@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إرام للخدمات اللوجستية - شريكك الموثوق في الحلول اللوجستية المتكاملة</title>
+    <meta name="description" content="إرام الدولية للمقاولات والخدمات اللوجستية تقدم حلولاً لوجستية متكاملة تشمل النقل، التخزين، الشحن الجوي والبحري، والخدمات الزراعية. شريكك الموثوق منذ 2015.">
+    <meta name="keywords" content="إرام، لوجستيات، شحن، نقل، تخزين، خدمات زراعية، شحن جوي، شحن بحري، مقاولات، السعودية، الرياض، حلول لوجستية">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="assets/images/logo.png" alt="IRAM LOGISTICS" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">الرئيسية</a></li>
+                    <li><a href="#about" class="nav-link">من نحن</a></li>
+                    <li><a href="#services" class="nav-link">خدماتنا</a></li>
+                    <li><a href="#tracking" class="nav-link">تتبع الشحنة</a></li>
+                    <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <a href="index.html" class="lang-link active">AR</a>
+                    <a href="index-en.html" class="lang-link">EN</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">إرام الدولية للمقاولات والخدمات اللوجستية</h1>
+                <p class="hero-subtitle">شريكك الموثوق في الحلول اللوجستية المتكاملة منذ 2015</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">اكتشف خدماتنا</a>
+                    <a href="#tracking" class="btn btn-secondary">تتبع شحنتك</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">عميل راضٍ</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">مدينة مغطاة</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">خدمة العملاء</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">99%</div>
+                        <div class="stat-label">معدل التسليم في الوقت</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section id="tracking" class="tracking-section">
+        <div class="container">
+            <div class="tracking-content">
+                <h2>تتبع شحنتك</h2>
+                <p>أدخل رقم التتبع الخاص بشحنتك لمعرفة موقعها الحالي</p>
+                <div class="tracking-form">
+                    <input type="text" id="trackingNumber" placeholder="أدخل رقم التتبع" class="tracking-input">
+                    <button onclick="trackShipment()" class="btn btn-primary">تتبع</button>
+                </div>
+                <div id="trackingResult" class="tracking-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>من نحن</h2>
+                    <p class="about-intro">تأسست شركة إرام الدولية للمقاولات والخدمات اللوجستية في عام 2015 لتلبية احتياجات السوق من خدمات المقاولات واللوجستيات بتقنية حديثة تجعلنا مميزين عن الآخرين. وذلك من خلال تبني فريق عمل مؤهل وذو خبرة، مع الاعتقاد بأن كل فرد في فريق إرام هو شريك في الربح والنجاح. هذا يجعل الجميع في فريق إرام يشعرون بالرضا والاطمئنان، وليس لديهم خيار آخر سوى النجاح والتطوير الكامل لتقديم خدمة نموذجية للعملاء في جميع الجوانب الإدارية والمالية والفنية، إيماناً بأن النجاح الحقيقي هو رضا العميل.</p>
+                    
+                    <div class="vision-mission">
+                        <div class="vm-item">
+                            <h3><i class="fas fa-eye"></i> رؤيتنا</h3>
+                            <p>تسعى إرام الدولية لتكون من أفضل المجموعات الخدمية والتجارية عالمياً في مجال المقاولات واللوجستيات من خلال تنفيذ الخطط الاستراتيجية في جميع المجالات الخدمية والتجارية التي تقدمها. كما تسعى إرام الدولية لامتلاك فروع في جميع أنحاء العالم لتقديم جميع خدماتها المتميزة.</p>
+                        </div>
+                        <div class="vm-item">
+                            <h3><i class="fas fa-bullseye"></i> مهمتنا</h3>
+                            <p>تقديم مجموعة من الخدمات المتكاملة للعملاء، وفقاً لأعلى المعايير الدولية التي تضمن رضا العملاء وجودة العمل.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/warehouse-modern.jpg" alt="مستودعات إرام الحديثة">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>خدماتنا</h2>
+                <p>نقدم مجموعة شاملة من الخدمات اللوجستية المتكاملة لضمان سلاسة عملياتك</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>خدمات النقل البري</h3>
+                    <p>نقل البضائع بأمان وكفاءة عبر شبكة واسعة من الطرق المحلية والإقليمية، مع أسطول حديث ومتنوع يلبي كافة الأحجام والأوزان.</p>
+                    <img src="assets/images/delivery-truck.jpg" alt="خدمات النقل البري" class="service-image">
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3>خدمات التخزين وإدارة المخزون</h3>
+                    <p>مستودعات حديثة ومجهزة بأحدث التقنيات لضمان سلامة البضائع، مع أنظمة متطورة لإدارة المخزون والتوزيع الفعال.</p>
+                    <img src="assets/images/warehouse-workers.jpg" alt="خدمات التخزين" class="service-image">
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>الخدمات اللوجستية الزراعية</h3>
+                    <p>حلول لوجستية متخصصة للقطاع الزراعي والمنتجات الطازجة، تشمل النقل المبرد والتخزين في بيئات متحكم بها للحفاظ على الجودة.</p>
+                    <img src="assets/images/agriculture-logistics.jpg" alt="الخدمات الزراعية" class="service-image">
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>الشحن الجوي السريع</h3>
+                    <p>خدمات الشحن الجوي السريع للبضائع العاجلة والحساسة، مع شبكة عالمية تضمن وصول شحناتك في أسرع وقت ممكن.</p>
+                    <img src="assets/images/cargo-airplane.jpg" alt="الشحن الجوي" class="service-image">
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>الشحن البحري الدولي</h3>
+                    <p>حلول الشحن البحري للبضائع الثقيلة والحاويات، مع تغطية واسعة للموانئ العالمية وخدمات التخليص الجمركي.</p>
+                    <img src="assets/images/shipping-port.jpg" alt="الشحن البحري" class="service-image">
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>حلول سلسلة التوريد المتكاملة</h3>
+                    <p>حلول لوجستية شاملة مصممة خصيصاً لاحتياجات عملك، من إدارة سلسلة التوريد إلى الاستشارات اللوجستية والتكامل التقني.</p>
+                    <img src="assets/images/global-network.jpg" alt="حلول متكاملة" class="service-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Management Section -->
+    <section class="quality-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>إدارة الجودة والتميز</h2>
+                <p>نلتزم بأعلى معايير الجودة في جميع خدماتنا لضمان رضاكم التام</p>
+            </div>
+            <div class="quality-grid">
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>إدارة الجودة</h3>
+                    <p>نعتبر إدارة الجودة أساساً نؤمن به، حيث تقود إلى النجاح من خلال الجهود المشتركة والمستمرة في التخطيط والتطوير وتحسين أداء العمل والخدمات المقدمة للعملاء بشكل مستمر لتحقيق رضا العميل الكامل والمستمر.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>إدارة الوقت</h3>
+                    <p>نعتبر الوقت المخطط في إدارة وقت العمل استراتيجية والتحكم الواعي في الوقت المستغرق في أنشطة محددة لزيادة الأداء والكفاءة أو المخرجات التي تتناسب مع جهاز العميل. كما توفر إرام خططاً مفيدة من خلال مجموعة من المهارات والأدوات والتقنيات المستخدمة لإدارة الوقت وتحقيق المشاريع والأهداف المحددة المتوافقة مع تاريخ العمل الموكل. يتم تحقيق إدارة الوقت من خلال مجموعة مخططة من العمليات والأدوات والتقنيات والأساليب. إدارة الوقت في أي مشروع ضرورية لتحسين وتحقيق الأهداف.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>إدارة المخاطر</h3>
+                    <p>تقوم الإدارة المتخصصة بقياس وتقييم المخاطر، ثم تضع استراتيجية لإدارتها. تعتمد إرام الدولية على استراتيجيات محددة لنقل المخاطر إلى أطراف أخرى، أو تجنبها، أو تقليل آثارها السلبية، أو خفضها إلى مستويات مقبولة، والتخفيف من المخاطر المحتملة.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>إدارة الموارد البشرية</h3>
+                    <p>يشير هذا إلى كيفية إدارة إرام الدولية لمهارات الموظفين والكوادر العاملة، مع التركيز على جذب الكفاءات المهنية الفعالة والاحتفاظ بها من خلال تحليل واقع ومتطلبات العمل، ومن خلال التخطيط الناجح لتأمين كادر متميز ومناسب لاحتياجات العمل.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>إدارة التواصل</h3>
+                    <p>يهدف مفهوم التواصل في إدارة الأعمال والمشاريع إلى اختيار الأساليب المناسبة للتواصل بين الأقسام والموظفين، وبين الأقسام والعملاء. من الضروري تحديد المعلومات الرئيسية التي يجب نقلها إلى جميع الأطراف. تهدف إرام الدولية إلى تحسين مستوى التفاعل بين فريق العمل والعملاء لتعزيز الإدارة الشاملة للعمل. كما تساعد إدارة التواصل في توثيق المعلومات لكلا الطرفين، وتسهيل تبادل المعلومات بين الأقسام المختلفة، ومراقبة تقدم العمل.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>إدارة التطوير</h3>
+                    <p>نركز على تطوير مهارات الموظفين والكوادر العاملة من خلال تحليل واقع ومتطلبات العمل والتخطيط الناجح لتأمين كادر متميز مناسب لاحتياجات العمل، مما يضمن التطور المستمر والابتكار في خدماتنا.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Request Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-content">
+                <h2>احصل على عرض سعر</h2>
+                <p>املأ النموذج أدناه وسنتواصل معك خلال 24 ساعة لتقديم أفضل الحلول اللوجستية</p>
+                <form class="quote-form" onsubmit="submitQuote(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">اسم الشركة</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">نوع الخدمة المطلوبة</label>
+                            <select id="service" name="service" required>
+                                <option value="">اختر الخدمة</option>
+                                <option value="transport">خدمات النقل البري</option>
+                                <option value="storage">خدمات التخزين وإدارة المخزون</option>
+                                <option value="agriculture">الخدمات اللوجستية الزراعية</option>
+                                <option value="air">الشحن الجوي السريع</option>
+                                <option value="sea">الشحن البحري الدولي</option>
+                                <option value="integrated">حلول سلسلة التوريد المتكاملة</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="urgency">مستوى الأولوية</label>
+                            <select id="urgency" name="urgency" required>
+                                <option value="">اختر الأولوية</option>
+                                <option value="normal">عادي</option>
+                                <option value="urgent">عاجل</option>
+                                <option value="emergency">طارئ</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">تفاصيل الطلب</label>
+                        <textarea id="message" name="message" rows="4" placeholder="اكتب تفاصيل طلبك هنا..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">إرسال الطلب</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>اتصل بنا</h2>
+                <p>نحن هنا لخدمتك على مدار الساعة، لا تتردد في التواصل معنا</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>العنوان</h3>
+                            <p>المملكة العربية السعودية<br>الرياض - حي الملك فهد</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>الهاتف</h3>
+                            <p>+966 11 123 4567<br>+966 50 123 4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>البريد الإلكتروني</h3>
+                            <p>info@iramlogistics.com<br>support@iramlogistics.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>ساعات العمل</h3>
+                            <p>الأحد - الخميس: 8:00 ص - 6:00 م<br>الجمعة - السبت: 9:00 ص - 4:00 م</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" onsubmit="submitContact(event)">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="الاسم الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="الموضوع" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="رسالتك" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo.png" alt="IRAM LOGISTICS">
+                        <p>شريكك الموثوق في الحلول اللوجستية المتكاملة</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>خدماتنا</h3>
+                    <ul>
+                        <li><a href="#services">خدمات النقل البري</a></li>
+                        <li><a href="#services">خدمات التخزين وإدارة المخزون</a></li>
+                        <li><a href="#services">الخدمات اللوجستية الزراعية</a></li>
+                        <li><a href="#services">الشحن الجوي السريع</a></li>
+                        <li><a href="#services">الشحن البحري الدولي</a></li>
+                        <li><a href="#services">حلول سلسلة التوريد المتكاملة</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#tracking">تتبع الشحنة</a></li>
+                        <li><a href="#contact">اتصل بنا</a></li>
+                        <li><a href="#quote">طلب عرض سعر</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>تابعنا</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 إرام للخدمات اللوجستية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/966501234567" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
