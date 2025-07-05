@@ -21,7 +21,346 @@
   <a href="https://wa.me/967734619110" class="whatsapp-button" target="_blank" rel="noopener noreferrer" aria-label="Contact us on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
-  <!-- ...rest of your content... -->
+
+    <!--  أضف أيقونة واتساب من Font Awesome أو مكتبة أيقونات أخرى  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="logo/iram_logo_concept_1.png" alt="IRAM LOGISTICS" class="logo">
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#tracking" class="nav-link">Track Shipment</a></li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+                <div class="language-switcher">
+                    <a href="index.html" class="lang-link" style="color: black;" >AR</a>
+                    <a href="index-en.html" class="lang-link active" style="color: black;">EN</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">IRAM International for Contracting and Logistics Services</h1>
+                <p class="hero-subtitle">Your Trusted Partner in Integrated Logistics Solutions Since 2015</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Discover Our Services</a>
+                    <a href="#tracking" class="btn btn-secondary">Track Your Shipment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section id="tracking" class="tracking-section">
+        <div class="container">
+            <div class="tracking-content">
+                <h2>Track Your Shipment</h2>
+                <p>Enter your tracking number to know its current location</p>
+                <div class="tracking-form">
+                    <input type="text" id="trackingNumber" placeholder="Enter Tracking Number" class="tracking-input">
+                    <button onclick="trackShipment()" class="btn btn-primary">Track</button>
+                </div>
+                <div id="trackingResult" class="tracking-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>About Us</h2>
+                    <p class="about-intro">IRAM International for Contracting and Logistics Services was established in 2015 to meet the market's needs for contracting and logistics services with modern techniques that make us stand out from others. This is achieved by adopting a qualified and experienced staff, believing that every individual in the IRAM team is a partner in profit and success. This makes everyone in IRAM's team feel satisfied and reassured, with no other option but to succeed and achieve complete development to provide an exemplary service to the customer in all administrative, financial, and technical aspects, believing that true success is customer satisfaction.</p>
+                    
+                    <div class="vision-mission">
+                        <div class="vm-item">
+                            <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                            <p>IRAM International strives to be one of the best service and commercial groups worldwide in the field of contracting and logistics by implementing strategic plans in all service and commercial fields it provides. IRAM International also seeks to have branches all over the world to provide all its distinguished services.</p>
+                        </div>
+                        <div class="vm-item">
+                            <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                            <p>To provide a range of integrated services to clients, according to the highest international standards that ensure customer satisfaction and work quality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="image/1.jps" alt="IRAM Modern Warehouses">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>We offer a comprehensive range of integrated logistics services to ensure smooth operations</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Land Transportation Services</h3>
+                    <p>Safe and efficient transportation of goods across a wide network of local and regional roads, with a modern and diverse fleet that meets all sizes and weights.</p>
+                    <img src="image/2.jps" alt="Land Transportation Services" class="service-image">
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3>Warehousing and Inventory Management</h3>
+                    <p>Modern warehouses equipped with the latest technologies to ensure the safety of goods, with advanced systems for efficient inventory management and distribution.</p>
+                    <img src="image/4.jps" alt="Warehousing Services" class="service-image">
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Agricultural Logistics Services</h3>
+                    <p>Specialized logistics solutions for the agricultural sector and fresh produce, including refrigerated transport and storage in controlled environments to maintain quality.</p>
+                    <img src="image/3.jps" alt="Agricultural Logistics Services" class="service-image">
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Express Air Freight</h3>
+                    <p>Fast air freight services for urgent and sensitive goods, with a global network ensuring your shipments arrive as quickly as possible.</p>
+                    <img src="image/4.jps" alt="Air Freight" class="service-image">
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3>International Sea Freight</h3>
+                    <p>Sea freight solutions for heavy goods and containers, with wide coverage of global ports and customs clearance services.</p>
+                    <img src="image/5.jps" alt="Sea Freight" class="service-image">
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Integrated Supply Chain Solutions</h3>
+                    <p>Comprehensive logistics solutions tailored to your business needs, from supply chain management to logistics consulting and technical integration.</p>
+                    <img src="image/1.jps" alt="Integrated Solutions" class="service-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Management Section -->
+    <section class="quality-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quality Management and Excellence</h2>
+                <p>We are committed to the highest quality standards in all our services to ensure your complete satisfaction</p>
+            </div>
+            <div class="quality-grid">
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Quality Management</h3>
+                    <p>We consider quality management a fundamental belief, as it leads to success through joint and continuous efforts in planning, developing, and improving work performance and services provided to customers continuously to achieve complete and continuous customer satisfaction.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Time Management</h3>
+                    <p>We consider planned time in work time management as a strategy and conscious control of time spent on specific activities to increase performance and efficiency or outputs that suit the client's device. IRAM also provides useful plans through a set of skills, tools, and techniques used to manage time and achieve projects and specific goals compatible with the entrusted work date. Time management is achieved through a planned set of operations, tools, techniques, and methods. Time management in any project is necessary to improve and achieve goals.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Risk Management</h3>
+                    <p>Specialized management measures and evaluates risks, then develops a strategy for their management. IRAM International relies on specific strategies to transfer risks to other parties, avoid them, reduce their negative impacts, lower them to acceptable levels, and mitigate potential risks.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Human Resources Management</h3>
+                    <p>This refers to how IRAM International manages employee skills and working cadres, focusing on attracting and retaining effective professional competencies by analyzing job realities and requirements, and through successful planning to secure a distinguished and suitable cadre for work needs.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Communication Management</h3>
+                    <p>The concept of communication in business and project management aims to select appropriate methods for communication between departments and employees, and between departments and clients. It is essential to identify key information that needs to be conveyed to all parties. IRAM International aims to improve the level of interaction between the work team and clients to enhance overall work management. Communication management also helps in documenting information for both parties, facilitating information exchange between different departments, and monitoring work progress.</p>
+                </div>
+                <div class="quality-item">
+                    <div class="quality-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Development Management</h3>
+                    <p>We focus on developing the skills of employees and working cadres by analyzing the reality and requirements of work and successful planning to secure a distinguished cadre suitable for work needs, ensuring continuous development and innovation in our services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Request Section -->
+    <section class="quote-section">
+        <div class="container">
+            <div class="quote-content">
+                <h2>Get a Quote</h2>
+                <p>Fill out the form below and we will contact you within 24 hours to provide the best logistics solutions</p>
+                <form class="quote-form" onsubmit="submitQuote(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">Service Type</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select Service</option>
+                                <option value="transport">Land Transportation Services</option>
+                                <option value="storage">Warehousing and Inventory Management</option>
+                                <option value="agriculture">Agricultural Logistics Services</option>
+                                <option value="air">Express Air Freight</option>
+                                <option value="sea">International Sea Freight</option>
+                                <option value="integrated">Integrated Supply Chain Solutions</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="urgency">Urgency Level</label>
+                            <select id="urgency" name="urgency" required>
+                                <option value="">Select Urgency</option>
+                                <option value="normal">Normal</option>
+                                <option value="urgent">Urgent</option>
+                                <option value="emergency">Emergency</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Request Details</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your request details here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We are here to serve you around the clock, feel free to contact us</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>Kingdom of Saudi Arabia<br>Riyadh - King Fahd District</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>00967734619110<br>00967734619110</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@iramlogistics.com<br>support@iramlogistics.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Working Hours</h3>
+                            <p>Sunday - Thursday: 8:00 AM - 6:00 PM<br>Friday - Saturday: 9:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" onsubmit="submitContact(event)">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
